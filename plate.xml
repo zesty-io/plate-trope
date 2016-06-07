@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<plate>
+    <head>
+        <doctype>Zesty</doctype>
+        <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    </head>
+    <clippings>
+        <text name="site_name" name_friendly="Site Name" required="1">Trope</text>
+        <images limit="1" name="logo" name_friendly="Site Logo">14</images>
+        <text name="footer_text" name_friendly="Footer Text">Footer text can be updated in Content Clippings</text>
+        <text name="footer_about" name_friendly="footer about"/>
+        <text name="footer_about_text" name_friendly="footer about text"/>
+        <images name="banner_test" name_friendly="banner test">11</images>
+        <text name="footer_blog_section_title" name_friendly="Footer blog section title">Recent Articles</text>
+        <text name="footer_right_top_heading" name_friendly="Footer right top heading">What's this all about?</text>
+        <text name="footer_left_side_links_title" name_friendly="Footer left side links title">Left links</text>
+        <text name="footer_middle_links_title" name_friendly="Footer middle links title">Right links</text>
+        <text name="footer_left_social_media_links" name_friendly="Footer left social media links">Social media</text>
+        <text name="footer_address" name_friendly="Footer address">Untitled Incorporated 1234 Somewhere Road Suite Nashville, TN 00000-0000 </text>
+        <text name="footer_mail" name_friendly="Footer mail">someone@untitled.tld</text>
+        <text name="footer_phone" name_friendly="Footer phone">(800) 000-0000</text>
+        <text name="copyright_text" name_friendly="Copyright text">Untitled. All rights reserved.</text>
+        <text name="design_text" name_friendly="Design text">Zesty</text>
+        <text name="demo_images" name_friendly="Demo Images">Someones art</text>
+        <text name="design_link_address" name_friendly="Design link address">www.zesty.io</text>
+        <text name="demo_images_link_address" name_friendly="Demo images link address">www.zesty.io</text>
+    </clippings>
+    <ingredients>
+        <templateset name="homepage" name_friendly="Homepage" view="homepage">
+            <fields>
+                <text name="header_banner_heading" name_friendly="Header banner heading" required="1"/>
+                <wysiwyg_advanced name="header_banner_text" name_friendly="Header Banner text"/>
+                <images name="header_banner_image" name_friendly="Header banner image"/>
+                <text name="header_left_heading" name_friendly="Header left heading"/>
+                <text name="header_left_heading_text" name_friendly="Header left heading text"/>
+                <text name="header_middle_heading" name_friendly="Header middle heading"/>
+                <text name="header_middle_heading_text" name_friendly="Header middle heading text"/>
+                <text name="header_right_heading" name_friendly="Header right heading"/>
+                <text name="header_right_heading_text" name_friendly="Header right heading text"/>
+                <text name="header_big_button" name_friendly="Header big button"/>
+                <text name="header_big_button_alt" name_friendly="Header big button alt"/>
+                <text name="first_major_section_title" name_friendly="First major section title"/>
+                <text name="second_major_section_title" name_friendly="Second major section title"/>
+            </fields>
+            <items>
+                <item link_title="Homepage" path_part="zesty_home">
+                    <header_banner_heading>As Pepper Bird</header_banner_heading>
+                    <header_banner_text>&lt;h2&gt;Cayenne is used in cooking spicy dishes, as a powder or in its whole form (such as in Korean, Sichuan and other Asian cuisine), or in a thin, vinegar-based sauce&lt;/h2&gt;
+                    &lt;p&gt;The cayenne pepper—also known as the Guinea spice,[1] cow-horn pepper, aleva, bird pepper,[2] or, especially in its powdered form, red pepper—is a hot chili pepper used to flavour dishes&lt;/p&gt;
+                    &lt;ul&gt;
+                    &lt;li&gt;As Other&lt;/li&gt;
+                    &lt;li&gt;In Is&lt;/li&gt;
+                    &lt;li&gt;In Whole&lt;/li&gt;
+                    &lt;li&gt;Sauce In&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;The fruits are generally dried and ground, or pulped and baked into cakes, which are then ground and sifted to make the powdered spice of the same name&lt;/p&gt;
+                    &lt;blockquote&gt;It is a cultivar of Capsicum annuum related to bell peppers, jalapeños, paprika and others&lt;/blockquote&gt;
+                    &lt;p&gt;It is a cultivar of Capsicum annuum related to bell peppers, jalapeños, paprika and othersIt is red colored when ripened to maturity, but also eaten while still green&lt;/p&gt;</header_banner_text>
+                    <header_banner_image>https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Thai_peppers.jpg/1024px-Thai_peppers.jpg</header_banner_image>
+                    <header_left_heading>Rated 50000 Scoville</header_left_heading>
+                    <header_left_heading_text>Cayenne Named City</header_left_heading_text>
+                    <header_middle_heading>Named Guiana Is</header_middle_heading>
+                    <header_middle_heading_text>The The Family</header_middle_heading_text>
+                    <header_right_heading>To Scoville At</header_right_heading>
+                    <header_right_heading_text>Nightshade Is Genus</header_right_heading_text>
+                    <header_big_button>Ripened But While</header_big_button>
+                    <header_big_button_alt>Powdered The Are</header_big_button_alt>
+                    <first_major_section_title>Maturity Colored While</first_major_section_title>
+                    <second_major_section_title>Related Cultivar And</second_major_section_title>
+                </item>
+            </items>
+        </templateset>
+    </ingredients>
+</plate>

@@ -1,0 +1,108 @@
+/**
+	typography.less
+	
+	version 1
+
+	Typography HTML Tag Elements are styled using Zesty Variables (found in config)
+	Variables can be changed by website managers (not just developers) so it is
+	important this file remains consistent. This file may have scheduled updates 
+	to keep a consistent Zesty experience. 
+
+	last updated: 8-6-2013
+*/
+
+body { 
+	font-size: @default-font-size;
+	color: @default-font-color;
+	font-family: @default-font, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: @heading-font, @default-font, Arial, sans-serif;
+	line-height: @headings-line-height;
+}
+
+h1 {
+	font-size: @h1-font-size;
+	font-weight: @h1-font-weight;	
+	line-height: @headings-line-height;
+	margin-bottom: @h1-margin-bottom;
+	color: @h1-font-color;
+}
+
+h2 {
+	font-size: @h2-font-size;
+	font-weight: @h2-font-weight;	
+	line-height: @headings-line-height;
+	margin-bottom: @h2-margin-bottom;
+	color: @h2-font-color;
+}
+
+h3 {
+	font-size: @h3-font-size;
+	font-weight: @h3-font-weight;
+	line-height: @headings-line-height;
+	margin-bottom: @h3-margin-bottom;
+	color: @h3-font-color;
+}
+
+h4 {
+	font-size: @h4-font-size;
+	font-weight: @h4-font-weight;	
+	line-height: @headings-line-height;
+	margin-bottom: @h4-margin-bottom;
+	color: @h4-font-color;
+}
+
+h5 {
+	font-size: @h5-font-size;
+	font-weight: @h5-font-weight;	
+	line-height: @headings-line-height;
+	margin-bottom: @h5-margin-bottom;
+	color: @h5-font-color;
+}
+
+h6 {
+	font-size: @h6-font-size;
+	font-weight: @h6-font-weight;		
+	line-height: @headings-line-height;
+	margin-bottom: @h6-margin-bottom;
+	color: @h6-font-color;
+}
+
+p {
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto;
+	font-size: @paragraph-font-size;
+	font-weight: @paragraph-font-weight;
+	line-height: @paragraph-line-height;	
+    margin-bottom: @paragraph-margin-bottom;
+	color: @paragraph-font-color;
+		
+	
+	img{
+		margin: @default-spacing / 2;
+	}
+	
+	img[align="left"],
+	img[align="right"] {
+		margin: 0px;
+		margin-bottom:@default-spacing / 2;
+	}
+	
+	img[align="left"]  { margin-right: @default-spacing ; }
+	img[align="right"] { margin-left:  @default-spacing ; }
+	
+}
+
+blockquote{
+	color: @blockquote-font-color;
+	padding: @blockquote-padding;
+	font-size: @blockquote-font-size;
+	font-family: @blockquote-font;
+	font-weight: @blockquote-font-weight;
+	font-style: @blockquote-font-style;
+	line-height: @blockquote-line-height;
+	margin: @default-spacing;	
+}

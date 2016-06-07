@@ -1,0 +1,173 @@
+/**
+	links-buttons-forms.less
+	
+	version 1
+
+	Links, Buttons, and Form Elements are simply styled using Zesty Variables (found in config)
+	Variables can be changed by website managers (not just developers) so it is
+	important this file remains consistent. This file may have scheduled updates 
+	to keep a consistent Zesty experience. 
+
+	last updated: 8-6-2013
+*/
+
+/* anchor tags (links) */
+
+a{
+	color: @link-color;
+	text-decoration: @link-text-decoration;
+	font-weight: @link-font-weight;
+	.transition(all @link-transition-speed ease);
+	
+	&:visited{
+		color: @link-visited-color;	
+	}
+	&:hover{
+		color: @link-hover-color;
+		text-decoration: @link-hover-text-decoration;	
+	}
+	&:active{
+		color: @link-active-color;	
+	}
+}
+
+/* buttons */
+input[type=button], input[type=submit], .button, a.button{
+	
+	.addButtonStyles();
+	
+	&.secondary {
+		.addSecondaryButtonStyles();	
+	}
+}
+
+/* forms */
+
+form{
+	margin: 0 0 @default-spacing 0;
+
+	fieldset{
+		legend{
+			font-size: @h6-font-size;
+			padding-bottom: 10px;
+		}	
+	}
+	div.field{
+		clear:both;
+		.border-radius(4px);
+		display: block;
+		margin-bottom: @default-spacing / 2;
+		border:none;
+	
+		&.check label {
+			display: inline;
+			font-weight: normal;
+		}
+		&.radio{
+			input{
+				float:left;
+			}
+			ul {
+				margin-top: @default-spacing / 4;
+				li {
+					margin: 0 0 (@default-spacing / 4) 0;
+					list-style:none;
+					label {
+						display: inline;
+						font-weight: normal;
+					}
+					&:last-child{
+						margin: 0px;
+					}
+				}
+			}
+		}
+		
+		&.required{
+			label{
+				&:after{
+					color: red;
+					content: '*';
+					margin: 0px 5px;
+				}
+			}
+		}
+		
+		&.validate-failed{
+			input{
+				border: 1px #ffccff solid;	
+			}
+		}
+		
+	}
+	
+	fieldset.form-actions {
+		margin: 0;
+	}
+	label {
+		display: block;
+		margin: 0 0 (@default-spacing / 4) 0;
+		font-weight: bold;
+	}
+	input, textarea {
+		display: inline-block;
+		padding: 5px 0px;
+		text-indent: 5px;
+		width: 100%;
+		border: 1px solid darken(@accent-color,5%);
+		.border-radius(@default-border-radius);
+		.box-shadow(inset 0 1px 2px rgba(0,0,0,.05));
+		.border-radius(4px);
+		
+		&:focus {
+			border: 1px solid darken(@accent-color,5%);
+			background: #fff;
+		}
+	}
+	input[type=submit],input[type=button]{
+		width: auto;	
+		font-size: @btn-font-size;
+	}
+	
+	textarea {
+		height: @default-spacing * 5;
+	}
+	select {
+		min-width: 25%;
+		margin: 0;
+	}
+	#captcha{
+		background-color: darken(@accent-color,10%);
+		border: 2px darken(@accent-color,40%) solid;
+		margin-bottom: @default-spacing;
+		.border-radius(4px);
+		.reload-recaptcha { 
+			float: right; 
+		}
+		#recaptcha_image{
+			width: 100% !important;	
+			border-bottom: 2px darken(@accent-color,40%) solid;
+		}
+		a{
+			background-color: darken(@accent-color,40%);
+			color: #fff;
+			.border-radius(4px);
+			padding: 3px 5px;
+			margin-right: 10px;
+		}
+		
+		.field{
+			margin-left: 10px;
+			margin-bottom: 10px;
+			input{
+				width: 60%;
+				background: white;
+			}
+		}
+	}
+	p.form-help {
+		margin: (@default-spacing / 4) 0 0 0;
+		color: lighten(@paragraph-font-color,10%);
+	}		
+	
+}
